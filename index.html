@@ -12,7 +12,9 @@
             .pub-links a { margin-right: 0.6em; }
             /* Same width as section text so the photo lands in the same margin column, level with the name. */
             h1 { width: 55%; }
-            @media (max-width: 760px) { h1 { width: 100%; } }
+            /* Keep long paper titles in the same column as the text below them. */
+            section > h3 { width: 55%; line-height: 1.3; }
+            @media (max-width: 760px) { h1, section > h3 { width: 100%; } }
         </style>
     </head>
 
